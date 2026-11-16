@@ -1,0 +1,39 @@
+{
+  "provider": "github",
+  "round": "gate-r0",
+  "manifests": {
+    ".github/workflows/test.yml": {
+      "removedTriggers": [],
+      "removedEnv": [],
+      "removedJobs": [],
+      "runsOnChanges": [
+        {
+          "job": "test",
+          "from": "ubuntu-latest"
+        },
+        {
+          "job": "react",
+          "from": "ubuntu-latest"
+        },
+        {
+          "job": "helpers",
+          "from": "ubuntu-latest"
+        }
+      ],
+      "localReusable": [],
+      "removedSteps": []
+    }
+  },
+  "deleted": [
+    ".github/workflows/browser-tests.yml",
+    ".github/workflows/code-check.yml",
+    ".github/workflows/issue-stale.yml",
+    ".github/workflows/monitor-registries.yml",
+    ".github/workflows/prerelease-comment.yml",
+    ".github/workflows/release.yml",
+    ".github/workflows/signed-commits-close.yml",
+    ".github/workflows/signed-commits.yml",
+    ".github/workflows/templates.yml",
+    ".github/workflows/validate-registries.yml"
+  ]
+}
